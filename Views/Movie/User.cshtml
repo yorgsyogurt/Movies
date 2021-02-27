@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "User";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Movies User</h1>
+    <p>ID: @ViewData["id"]</p>
+    <p>Name: @ViewData["name"]</p>
+    @for (int i = 0; i < (int)ViewData["id"]; i++)
+    {
+        <span>@i </span>
+    }
+</div>
